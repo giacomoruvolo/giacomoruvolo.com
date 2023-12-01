@@ -1,4 +1,4 @@
-# Hi, I'm Fred
-I’m a Research Scientist, and this is my Jekyll website.
+# Hi, I'm Giacomo
+I’m a Computer Engineering student, and this is my Jekyll website.
 
-Run with  `npm run start`
+Note: It's work in progress
