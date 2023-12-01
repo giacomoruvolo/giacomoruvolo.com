@@ -1,6 +1,6 @@
-title: Fred Hohman
-tagline: Research Scientist at Apple
-url: http://fredhohman.com
+title: Giacomo ruvolo
+tagline: Computer Engineering student
+url: http://giacomoruvolo.com
 baseurl: ""
 # gems: [jekyll-paginate]
 # paginate: 5
@@ -14,9 +14,9 @@ sass:
   style: compressed
 
 author:
-  name: Fred Hohman
-  url: http://fredhohman.com
-  email: fred.hohman@gmail.com
+  name: Giacomo Ruvolo
+  url: http://giacomoruvolo.com
+  email: gr@giacomoruvolo.com
 
 markdown: kramdown
 highlighter: rouge
