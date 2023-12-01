@@ -9,7 +9,8 @@ title: Home
 			<img id="intro-image" src="/images/portrait.jpg"></div>
 		<div id="intro-title-text-wrapper">
 			<h1 id="intro-title">Hi, I'm Giacomo Ruvolo</h1>
-			<div id="intro-subtitle">I'm a Computer Engineering student at Univeristy of Catania</div>
+			<div id="intro-subtitle">I'm a Computer Engineering student</div>
+			<div id="intro-subtitle">at University of Catania</div>
 			<div id="intro-title-socials">
 				{% for link in site.data.social-links %}
 					{% if link.on-homepage == true %}
@@ -21,24 +22,31 @@ title: Home
 	</div>
 	<!-- <hr class="l-middle home-hr"> -->
 	<div id="everything-else" class="l-middle">
-		<a href="{{ site.url }}/cv"><div><i class="fa fa-portrait icon icon-right-space"></i>CV</div></a>
-		<a href="{{ site.url }}/projects"><div><i class="fa fa-shapes icon icon-right-space"></i>Projects</div></a>
-		<a href="{{ site.url }}/everything-else"><div><i class="fa fa-list-ul icon icon-right-space"></i>Everything Else</div></a>
+		<a href="/cv.pdf"><div><i class="fa fa-portrait icon icon-right-space"></i>CV</div></a>
+		<!-- <a href="{{ site.url }}/projects"><div><i class="fa fa-shapes icon icon-right-space"></i>Projects</div></a>-->
+		<a href="https://www.google.com/search?q=Do+a+barrel+roll"><div><i class="fa fa-list-ul icon icon-right-space"></i>Everything Else</div></a>
 	</div>
 	<div>
-		I design and develop interactive interfaces to help people <b>understand machine learning models</b> and data-driven systems. Besides building tools, I also create <b>data visualizations</b> and write interactive articles to simply communicate complex ideas.
-	</div>
-	<div style="height: 1rem"></div>
-	<div>
-		I received my PhD from Georgia Tech where I worked with <a href="http://www.cc.gatech.edu/~dchau/">Polo Chau</a> and <a href="http://va.gatech.edu/endert/">Alex Endert</a>. My dissertation on <a href="/dissertation">interactive interfaces for interpretability</a> won the <i>ACM SIGCHI Outstanding Dissertation Award</i> and was supported by a <i>NASA Space Technology Research Fellowship</i>.
+		"Why couldn't the programmer dance to the song?<br>
+		Because he didn't get the... Algo-rhythm..."<br>
+		<strong>Maybe this is the reason why I can't be a dancer but can be a developer!</strong>
 	</div>
 	<div style="height: 1rem"></div>
 	<div>
-		I have collaborated with designers, developers, artists, and scientists while working at <img class="intro-logo" style="width: 19px; padding-bottom: 5px;" src="/images/apple.svg"> Apple, <img class="intro-logo" style="width: 18px; padding-bottom: 3px;" src="/images/microsoft.svg"> Microsoft Research, <img class="intro-logo" style="width: 24px" src="/images/nasa.svg"> NASA Jet Propulsion Lab, and <img class="intro-logo" style="width: 24px;" src="/images/pnnl.svg"> Pacific Northwest National Lab.
+		I was born in Sicily (Italy) and I am currently a Computer Engineering student in Catania, and I am interested in innovation, new technologies, and business. I specialise in Web development (HTML, CSS, PHP, GitHub), PMI IT consulting and business management.
+		<br>
+		I am also the CEO of my family firm <a href="https://parafarmacianaxos.it/"> Parafarmacia Naxos</a>, and my primary responsibilities include accounting, economic management, and financial management
+	</div>
+	<div style="height: 1rem"></div>
+	<div>
+		I am a motorbike fanatic. I am a member of <a href="https://www.etnachapter.it/"> Etna Chapter Italy #7292</a>, Catania's official Harley-Davidson motorbike club, where I serve as Webmaster and Road Captain.
+		I am an insatiable explorer, always eager to get my hands dirty! Let's get started!
 	</div>
 </div>
 
+<!-- 
 <hr class="l-middle home-hr">
+
 
 <h2 class="feature-title">Featured <a href="/cv/#publications">Research Publications</a></h2>
 
@@ -47,13 +55,16 @@ title: Home
 </p>
 
 <div class="cover-wrapper cover-wrapper-3-col l-page">
+	{% comment %}
 	{% assign sortedPublications = site.categories.papers | sort: 'feature-order' %}
 	{% for feature in sortedPublications %}
 		{% if feature.featured == true %}
 			{% include feature.html feature=feature %}
 		{% endif %}
 	{% endfor %}
+	{% endcomment %}
 </div>
+
 
 <br>
 <h2 class="feature-title">Featured <a href="/dissertation">Dissertation Publications</a></h2>
@@ -63,16 +74,20 @@ title: Home
 </p>
 
 <div class="cover-wrapper cover-wrapper-1-col l-text">
+	{% comment %}	
 	{% include dissertation/document.html details=false location=home %}
+	{% endcomment %}
 </div>
 
 <div class="cover-wrapper cover-wrapper-3-col l-page">
+	{% comment %}
 	{% assign sortedPublications = site.categories.papers | sort: 'feature-order' %}
 	{% for feature in sortedPublications %}
 		{% if feature.dissertation == true %}
 			{% include feature.html feature=feature %}
 		{% endif %}
 	{% endfor %}
+	{% endcomment %}
 </div>
 
 <br>
@@ -83,11 +98,13 @@ title: Home
 </p>
 
 <div class="cover-wrapper cover-wrapper-2-col l-middle">
+	{% comment %}
 	{% for feature in site.data.designs %}
 		{% if feature.featured == true %}
 			{% include feature.html feature=feature %}
 		{% endif %}
 	{% endfor %}
+	{% endcomment %}
 </div>
 
 <br>
@@ -99,6 +116,7 @@ title: Home
 </p>
 
 <div class="cover-wrapper cover-wrapper-3-col l-page">
+	{% comment %}
 	{% assign sortedArticles = site.data.articles | where: "featured", true %}
 	{% assign ia = site.categories.papers | where:"permalink", "papers/interactive-articles" %}
 
@@ -110,6 +128,7 @@ title: Home
 
 	{% assign feature = ia[0] %}
 	{% include feature.html feature=feature %}
+	{% endcomment %}
 </div>
 
 <br>
@@ -120,20 +139,15 @@ title: Home
 </p>
 
 <div class="cover-wrapper cover-wrapper-2-col l-middle">
+	{% comment %}
 	{% assign parametric = site.data.articles | where: "parametric-issue", true %}
 	{% for feature in parametric %}
 		{% include feature.html feature=feature %}
 	{% endfor %}
+	{% endcomment %}
 </div>
 
+-->
 
-
-[gt]: http://www.gatech.edu "Georgia Tech"
-[cse]: http://cse.gatech.edu "Georgia Tech Computational Science and Engineering"
-[coc]: http://www.cc.gatech.edu "Georgia Tech College of Computing"
 
 [cv]: {{ site.url }}/cv
-[polo]: http://www.cc.gatech.edu/~dchau/ "Polo Chau"
-[alex]: http://va.gatech.edu/endert/ "Alex Endert"
-[poloclub]: http://poloclub.gatech.edu "Polo Club of Data Science"
-[nstrf]: https://www.nasa.gov/strg/nstrf "NASA Space Technology Research Fellowship"
