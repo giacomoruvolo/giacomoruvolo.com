@@ -1,6 +1,6 @@
 {
-    "name": "fredhohman",
-    "short_name": "fredhohman",
+    "name": "giacomoruvolo",
+    "short_name": "giacomoruvolo",
     "icons": [
         {
             "src": "/icons/android-chrome-192x192.png?v=xQdLjRyXLj",
@@ -8,7 +8,7 @@
             "type": "image/png"
         },
         {
-            "src": "/icons/android-chrome-384x384.png?v=xQdLjRyXLj",
+            "src": "/icons/android-chrome-512x512.png?v=xQdLjRyXLj",
             "sizes": "384x384",
             "type": "image/png"
         }
