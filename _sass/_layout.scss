@@ -22,6 +22,10 @@ main > * {
 	grid-column: text;
 }
 
+main{
+	min-height: 88vh;
+}
+
 // Sizes
 .l-kicker { grid-column: kicker; }
 .l-gutter { grid-column: gutter; }
