@@ -9,7 +9,7 @@ title: Home
 			<img id="intro-image" src="/images/portrait.jpg"></div>
 		<div id="intro-title-text-wrapper">
 			<h1 id="intro-title">Hi, I'm Giacomo Ruvolo</h1>
-			<div id="intro-subtitle">I'm a Computer Engineering student</div>
+			<div id="intro-subtitle">I’m currently pursuing a Master’s degree in Computer Science and Engineering at Politecnico di Milano, with a focus on ICT Engineering, Business, and Innovation</div>
 			<div id="intro-subtitle">at University of Catania</div>
 			<div id="intro-title-socials">
 				{% for link in site.data.social-links %}
@@ -32,11 +32,11 @@ title: Home
 		<strong>Maybe this is the reason why I can't be a dancer but can be a developer!</strong>
 	</div>
 	<div style="height: 1rem"></div>
-	<div>
-		I was born in Sicily (Italy) and I am currently a Computer Engineering student in Catania, and I am interested in innovation, new technologies, and business. I specialise in Web development (HTML, CSS, PHP, GitHub), PMI IT consulting and business management.
-		<br>
-		I am also the CEO of my family firm <a href="https://parafarmacianaxos.it/"> Parafarmacia Naxos</a>, and my primary responsibilities include accounting, economic management, and financial management
-	</div>
+	<div>I am a Computer Engineer currently living in Milan. I hold a Bachelor’s degree in Computer Engineering and I’m currently pursuing a Master’s degree in Computer Science and Engineering at Politecnico di Milano, with a focus on ICT Engineering, Business, and Innovation.
+
+Originally from Sicily, I have always been passionate about innovation, new technologies, and entrepreneurship. My technical background is rooted in web development (HTML, CSS, PHP, GitHub), and I also have experience in IT consulting for PMI and business management.
+
+In addition to my academic path, I am the CEO of my family business, Parafarmacia Naxos, where I oversee accounting, economic planning, and financial management.</div>
 	<div style="height: 1rem"></div>
 	<div>
 		I am a motorbike fanatic. I am a member of <a href="https://www.etnachapter.it/"> Etna Chapter Italy #7292</a>, Catania's official Harley-Davidson motorbike club, where I serve as Webmaster and Road Captain.
